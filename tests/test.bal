@@ -15,10 +15,11 @@
 //under the License.
 
 import ballerina/test;
+import ballerina/os; 
 
-configurable string clientId = ?;
-configurable string clientSecret = ?;
-configurable string refreshToken = ?;
+configurable string clientId = os:getEnv("CLIENT_ID");
+configurable string clientSecret = os:getEnv("CLIENT_SECRET");
+configurable string refreshToken = os:getEnv("REFRESH_TOKEN");
 
 SpreadsheetConfiguration config = {
     oauth2Config: {
