@@ -12,7 +12,7 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: Ballerina Build
-              uses: Chuhaa/ballerina-action/@swan-lake-alpha1
+              uses: Chuhaa/ballerina-action/@slalpha1
               with:
                   args:
                       build --skip-tests
